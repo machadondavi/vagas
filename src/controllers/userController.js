@@ -35,7 +35,7 @@ exports.put = (req, res, next) => {
 
 
 exports.delete = (req, res, next) => {
-    User.findOneAndRemove(req.body.id).then(x => {
+    User.findOneAndRemove(req.params.id).then(x => {
         res.status(200).send({ message: 'Usuário removido!'});
     }).catch( e => {
         res.send(400).send({ message: 'Erro ao excluir usuário!'})
