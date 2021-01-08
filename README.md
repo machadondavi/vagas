@@ -1,12 +1,15 @@
 # API REST - NODEJS, EXPRESS & MONGODB
 
+## Descrição do Projeto:
+O projeto consiste em uma API Rest para tarefas do tipo CRUD(Create (criar), Read (ler), Update (atualizar) e Delete (deletar), utilizando NodeJs, e realizando uma conexão e armazenando os dados em um Banco de Dados, e neste projeto, foi utilizado o MongoDB. Foi utilizado também a lib Express, para gerenciamento dessas rotas.
+
 ## Requerimentos para uso:
 - NodeJs
 - Express
 - Mongoose 
 - NPM ou Yarn
 
-##Descrição dos requerimentos:
+## Descrição dos requerimentos:
 - Express: para tratar rotas;
 - Mongoose: para conexão com o MongoDB(Banco de Dados);
 - Npm/Yard: são os gerenciadores de pacotes;
@@ -16,7 +19,7 @@
 ```
 npm install or yard install
 ```
-##Dependências do projeto:
+## Dependências do projeto:
 ``` 
 "keywords": [],
   "author": "",
