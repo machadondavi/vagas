@@ -32,16 +32,36 @@ npm install or yard install
     "nodemon": "^2.0.7"
 ```
 ## Model/UserSchema: 
-- Nome;
-- Email;
-- Tel(Telefone);
+```
+nome: {
+        type: String,
+        required: true,
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true,
+        lowercase: true
+    },
+    tel: {
+        type: Number,
+        required: true,
+    },
+    active: {
+        type: Boolean,
+        required: true,
+        default: true
+    }
+```
 
 ## Exemplo - JSON:
 ```
 {
+  "id": "1"
   "nome": "Davi",
   "email": "davi@gmail.com",
-  "tel:": "981012182"
+  "tel:": "981012182",
+  "active": "true"
 }
 ```
 
