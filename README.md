@@ -50,11 +50,7 @@ nome: {
         type: Number,
         required: true,
     },
-    active: {
-        type: Boolean,
-        required: true,
-        default: true
-    }
+    
 ```
 
 ## Exemplo - JSON:
@@ -63,8 +59,7 @@ nome: {
   "id": "1"
   "nome": "Davi",
   "email": "davi@gmail.com",
-  "tel:": "981012182",
-  "active": "true"
+  "tel:": "981012182"
 }
 ```
 
