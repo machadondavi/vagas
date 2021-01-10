@@ -10,7 +10,7 @@ const router = express.Router();
 mongoose.connect(('mongodb+srv://davimachado123:davimachado123@cluster0.catov.mongodb.net/crud?retryWrites=true&w=majority'), {
 useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false })
 
-//app.use(cors());
+app.use(cors());
 
 //carrega os models
 const User = require('./models/userSchema');

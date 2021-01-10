@@ -3,7 +3,7 @@ const userSchema = require('../models/userSchema');
 const User = mongoose.model('User');
 
 exports.get = (req, res, next) => {
-    User.find({ active: true }, 'nome email tel active').then(data => {
+    User.find().then(data => {
         res.status(200).send({data});
     }).catch(e => {
         res.status(400).send(e);
